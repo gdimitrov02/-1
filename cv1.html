@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    td, .form-row, .Умения в технологии, button {
+      margin-bottom: 10px;
+    }
+    .saveCVButton {
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height:10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Създаване на CV</h1>
+  <form action="">
+    <table>
+      <tr>
+        <td>
+          <b>
+            <label for="Име">Име</label>
+          </b>
+        </td>
+        <td>
+          <input type="text" id="Име">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b>
+            <label for="Презиме">Презиме</label>
+          </b>
+        </td>
+        <td>
+          <input type="text" id="Презиме">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b>
+            <label for="Фамилия">Фамилия</label>
+          </b>
+        </td>
+        <td>
+          <input type="text" id="Фамилия">
+        </td>
+      </tr>
+    </table>
+    <div style="display: flex; align-items: center;">
+      <h2 style="margin-right: 30px">Дата на раждане</h2>
+      <input type="date" id="Дата на раждане" name="Дата на раждане">
+    </div>
+    <div class="form-row">
+      <div class="label">
+        <b>
+          <label for="Избете университет">Изберете университет</label>
+        </b>
+      </div>
+      <div class="input">
+        <select name="Университет" id="Университет">
+          <option value="1">Софийски университет „Свети Климент Охридски“</option>
+          <option value="2">Икономически университет - Варна</option>
+          <option value="3">Медицински университет - Варна</option>
+        </select>
+      </div>
+    </div>
+    <button id="editUniversityListButton">Pencil (Edit list)</button>
+    <button id="Добави нов университет">Добави нов университет</button>
+    <div id="Нов университет" class="dropdown">
+      <input type="text" id="Нов университет" placeholder="Име на университета">
+      <button id="saveUniversityButton">Save</button>
+      <button id="closeMenuButton">Close</button>
+    </div>
+
+    <div class="Умения в технологии">
+      <div class="Умения в технологии">
+        <label for="Умения"><b>Умения</b></label>
+      </div>
+      <div class="Умения">
+        <select name="" id="" multiple>
+          <option value="">PHP</option>
+          <option value="">Laravel</option>
+          <option value="">Symfony</option>
+          <option value="">MySql</option>
+          <option value="">CSS3</option>
+        </select>
+      </div>
+    </div>
+
+    <button id="Добави ново умение">Добави ново умение</button>
+    <div id="Ново умение" class="dropdown">
+      <input type="text" id="Ново умение" placeholder="Умение">
+      <button id="saveSkillButton">Save</button>
+      <button id="closeMenuButton">Close</button>
+    </div>
+    <div class="container">
+      <button id="saveCVButton">Запис CV</button>
+    </form>
+  </div>
+  <script type="javascript"></script>
+</script>
+</body>
+</html>
